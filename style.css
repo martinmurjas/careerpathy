@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+    background-color: black;
+    display:block;
+    align-items: center;
+    margin:0rem;
+    color: #354b54;
+    font-family: Martel;
+    font-weight: 100;
+}
+
+header {
+    background-color: #354b54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF7E2;
+    width: calc(100% - 2rem);
+    padding:1rem;
+    position: fixed;
+}
+
+h1 {
+    font-family: Sofia;
+    color: #FFF7E2;
+    margin: 0rem;
+    font-size: 2.5rem;
+}
+
+header img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div > * {
+    padding: 0rem 2rem;
+    max-width: 1024px;
+}
+
+#landing {
+    height: 100%;
+    background-color: #FFF7E0;
+    padding-top: 7rem;
+    width: 100%;
+}
+
+#landing > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E9806E;
+}
+
+#landing > div:first-child > h2 {
+    color: #E9806E;
+    text-align: center;
+}
+
+#landing img {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+
+#callToAction {
+    background-color: #83C3A9;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#callToAction button {
+    background-color: #354b54;
+    color: #FFF7E0;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    font-family: El Messiri;
+    font-weight: 900;
+    font-size: 1rem;
+    border: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#callToAction button > span {
+    margin-right: .5rem;
+}
+
+#callToAction h2 {
+    color: #FFF7E0;
+    text-align: center;
+}
+
+#missionAndAbout {
+    background-color: #E9806E;
+    color: #FFF7E0;
+    padding-top: 7rem;
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+#about img {
+    width: 10rem;
+    border-radius: 10rem;
+}
+
+@media screen and (min-width: 320px){
+    h1 {
+        font-size: 3rem;
+    }
+
+    header img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    
+
+    #callToAction {
+        border-radius: 5rem;
+        max-width: calc(1024px - 25rem);
+        padding: 1rem 4rem;
+        margin: 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    #landing, #missionAndAbout {
+        height: calc(100vh - 7rem);
+    }
+
+    #landing {
+        height: calc(100vh - 7rem);
+    }
+}
